@@ -1,0 +1,161 @@
+/* Existing variables and reset */
+:root {
+    --gradient: linear-gradient(120deg, #4f46e5, #3b82f6);
+    --primary: #3b82f6;
+    --bg: #f4f7fa;
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-dark);
+    line-height: 1.7;
+  }
+  
+  /* --- NAVBAR --- */
+  nav {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+  
+  /* --- HEADER --- */
+  header {
+    background: var(--gradient);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  /* --- SECTIONS --- */
+  section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
+    color: var(--primary);
+  }
+  
+  /* --- CARDS --- */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #e0f2fe;
+    color: #0c4a6e;
+  }
+  
+  .card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+  
+.card.edu{
+  background: #fefce8;
+  border-left: 4px solid #aca793;
+}
+
+  .project p {
+    font-size: 15px;
+    color: var(--text-light);
+  }
+  
+  /* --- CONTACT --- */
+  .contact a {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .contact a:hover {
+    color: #1d4ed8;
+  }
+  
+  /* --- FOOTER --- */
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
