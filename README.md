@@ -61,7 +61,3 @@ Passionate about **Database Development**, **SQL Optimization**, and **Data Anal
 - **GitHub:** [github.com/sikabudhin](https://github.com/sikabudhin)  
 
 ---
-
-### 📄 License
-This project is open source and available under the [MIT License](LICENSE).
-
