@@ -115,14 +115,6 @@ body {
   position: relative;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
 
 .header h1 {
   font-size: 3.5rem;
